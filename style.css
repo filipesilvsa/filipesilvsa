@@ -1,0 +1,498 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HTML e Body devem ocupar 100% da altura */
+html, body {
+    background: #2C3E50;
+    height:100%;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Container principal para todo o conteúdo */
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+justify-content: space-between;
+  
+}
+
+/* O conteúdo principal deve expandir para ocupar o máximo de espaço possível */
+.content {
+    flex: 1;
+    height: 400vh;
+    padding: 20px;
+}
+
+/* Estilização do cabeçalho e rodapé */
+
+header{
+    background-color: #333;
+  font-family: "New Amsterdam", sans-serif;
+position: fixed;
+  top: 0;
+      z-index: 1000;
+   width: 100%;
+    color: white;
+   padding: 10px 0;
+    border-bottom:2px solid orangered;
+}
+
+.conteiner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.flex {
+    display:flex;
+    justify-content: space-between;
+   
+}
+
+.logo h1 {
+    margin: 0 20px;
+    display:flex;
+    font-size:20px;
+color: orangered;
+  
+}
+.logo span{
+  color: white;
+}
+.in input{
+ padding: 8px;
+ border: none;
+  border-radius: 15px;
+     border: 
+    2px solid orangered;
+}
+.logo a {
+  text-decoration:none;
+
+  
+}
+.menu-lateral{
+  
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  
+}
+
+  nav ul li  {
+
+padding: 10px;
+
+    
+  }
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+  font-size: 18px;
+    
+  }
+
+section{
+    text-align: center;
+  margin-top:100px;
+    padding: 10px;
+    background-color: white;
+    border: none;
+       border-bottom:4px solid orangered;
+}
+
+  .menu-lateral  i{
+    display: none;
+  }
+
+.fechar-btn,.rede button
+{
+  display:none;
+}
+
+ .menu{
+   display: none;
+ }
+  
+  
+
+
+
+/* Estilização dos produtos */
+.produt {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top:100px;
+    padding: 10px;
+   
+
+  
+}
+.produt ul{
+  margin-bottom: 40px;
+  margin-right: 20px;
+}
+.pro {
+    background-color:transparent;
+    border: 1px solid orangered;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    
+}
+
+.pro img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.pro h1 {
+    font-size: 18px;
+    margin: 15px 0;
+}
+
+.pro span {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 15px;
+    display: block;
+}
+
+.pro button {
+    padding: 10px 20px;
+    background-color: orangered;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+
+.pro button:hover {
+    background-color: #555;
+}
+
+/* Estilização do rodapé */
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: left;
+    width: 100%;
+position: relative;
+ font-family: "Lora", serif; 
+  border-top:4px solid orangered;
+  
+}
+
+.footer-content {
+    display: flex;
+    margin-top:20px;
+    justify-content: space-around;
+    max-width: 1200px;
+}
+
+.footer h2 {
+    font-size:20px;
+    margin-bottom: 10px;
+   color: orangered;
+  
+}
+.footer h1{  margin-bottom:10px;
+    display:flex;
+    font-size:20px;
+color: orangered;
+  
+}
+.footer span{
+    color: white;
+  
+}
+.footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer ul li {
+    margin-bottom: 10px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+font-size: 10px;
+  
+}
+
+.footer ul li a:hover {
+    text-decoration: underline;
+}
+  
+
+
+.footer ul li a {
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+.footer ul.social-media li a:hover {
+    color: #f90; /* Altere a cor ao passar o mouse sobre o ícone */
+}
+  .footer-newsletter form {
+      display: flex;
+      flex-direction: column;
+    }
+
+    .footer-newsletter input {
+      padding: 10px;
+      margin-bottom: 10px;
+     border-radius: 8px;
+      border: none;
+   
+      
+    }
+
+    .footer-newsletter button {
+      padding: 10px;
+      background-color: orangered;
+      color: #fff;
+      border: none;
+      cursor: pointer;
+      border-radius: 8px;
+    }
+.red{
+  display: flex;
+  margin-top:20px;
+  justify-content:space-between;
+  border: none;
+}
+.red i  {
+       color:black;
+            font-size: 20px;
+            margin-bottom: 5px;
+        padding: 10px;
+        border: none;
+          border-radius:15px;
+            
+}
+       
+       
+
+.red button{
+  border: none;
+  border-radius:10px;
+  
+}
+    .carousel {
+            position: relative;
+            width: 100%;
+            max-width: 500px;
+            margin: auto;
+            margin-top: 100px;
+          
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .carousel-images {
+            display: flex;
+            transition: transform 0.5s ease-in-out;
+        }
+        .carousel-image {
+            min-width: 100%;
+            box-sizing: border-box;
+        }
+        .carousel img {
+            width: 100%;
+            border-radius: 15px;
+        }
+        .carousel-dots {
+            position: absolute;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+        }
+        .carousel-dot {
+            display: inline-block;
+            width: 10px;
+            height: 10px;
+            margin: 0 5px;
+            background-color: #bbb;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+        .carousel-dot.active {
+            background-color: #333;
+        }
+        
+        
+        
+        
+        
+        
+       /* Responsivo */
+   @media (max-width: 768px) {
+       
+    /* Estilo para o menu lateral */
+.menu-lateral  {
+    height: 90%;
+    width: 0;
+    position:fixed;
+    top: 0;
+    right: 0;
+    background-color: #333;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    z-index: 1000;
+    border-top:4px solid orangered;
+   border-bottom:4px solid orangered;
+}
+
+.menu-lateral nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: block;
+}
+
+.menu-lateral nav ul li a {
+    padding: 10px 15px;
+   
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display:block;
+    transition: 0.2s;
+}
+
+.menu-lateral nav ul  li {
+  margin-bottom: 10px;
+  
+}
+.menu-lateral  i  {
+           
+            font-size:18px;
+            margin-bottom: 5px;
+        display: inline-block;
+        padding: 10px;
+}
+        
+    .menu-lateral a:hover {
+        background-color:orangered;
+     
+    }
+.fechar-btn {
+    position: absolute;
+    top: 10px;
+    align-items: center;
+    font-size: 50px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+
+}
+
+.rede{
+  display: Flex;
+}
+.rede button{
+  border-radius: 10px;
+ border:none;
+  background: white;
+  display: flex;
+}
+.rede:hover{
+  background:none;
+}
+
+
+
+    /* Estilo para o menu lateral */
+   
+    /* Estilo do cabeçario */
+  .menu{
+  display: flex;
+     font-size: 30px;
+    color: white;
+    margin: 0 10px 0;
+  }    
+
+       .logo h1{
+    margin: 0;
+    font-size: 18px;
+color: orangered;
+  
+}
+.logo span{
+  color: white;
+}
+.logo a {
+  text-decoration:none;
+}
+  
+  .logo{
+    display:flex;
+  }
+  
+        .logo h1 {
+    margin: 0 10px;
+    font-size: 10px;
+color: orangered;
+    
+      }
+    
+    .in input{
+  padding:8px;
+ margin: 0 15px;
+  border-radius: 15px;
+}
+
+   
+       /* Estilo do cabeçario */ 
+  
+  
+        
+    /* Estilo Rodapé */
+      .footer-content {
+        flex-direction: column;
+        align-items: center;
+     text-align: center;
+      }
+  
+
+
+.footer h2 {
+    font-size:18px;
+    margin-bottom: 10px;
+    color:orangered;
+}
+
+  
+
+  .menu-lateral{
+    display: flex;
+  }
+
+  .logo h1 {
+ font-size:20px;
+  
+}
+
+.produt {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+}
